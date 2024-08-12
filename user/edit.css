@@ -1,0 +1,47 @@
+
+
+
+
+input {
+  display: block;
+  border: 2px solid #ccc;
+   width: 450px;
+  
+  border-radius: 5px;
+}
+label {
+  color: #888;
+  font-size: 18px;
+  
+}
+form {
+  position: absolute;
+  right: 400px;
+  top: 50px;
+  width: 500px;
+  border: 2px solid #ccc;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #e9e8e6;
+  padding: 30px 0;
+  color: #222222;
+  font-size: 14px;
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+#footer .credits a {
+  color: #34b7a7;
+}

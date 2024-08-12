@@ -1,0 +1,228 @@
+
+body {
+	background: #1690A9;
+	font-family: "Open Sans", sans-serif;
+}
+.menu {
+			width: 200px;
+			height: 200px;
+			padding: 5px;
+		}
+		.alb img {
+			width: 100%;
+			height: 100%;
+		}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #34b7a7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #49cbbb;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+/*--------------------------------------------------------------
+#SIDEBAR
+--------------------------------------------------------------*/
+.sidebar {
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	background: #042331;
+
+}
+.sidebar header {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	background: #063146;
+	user-select: none;
+
+}
+.sidebar ul a {
+	font-family: "Open Sans", sans-serif;
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: white;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255, 255, 255, .1);
+	border-bottom: 1px solid black;
+
+}
+ul li:hover a {
+	padding-left: 50px;
+}
+.sidebar ul a i {
+	margin-right: 16px;
+}
+
+form {
+	position: absolute;
+	right: 400px;
+	top: 50px;
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+button:hover{
+	opacity: .7;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+#logout {
+	
+}
+#logout:hover{
+	opacity: .7;
+}
+#sign {
+	font-family: sans-serif;
+}
+/*--------------------------------------------------------------
+# overview
+--------------------------------------------------------------*/
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.content h1{
+  padding: 0.50em;
+}
+.Profile{
+  align-content: center;
+  text-align: center;
+}
+.Profile hr{
+  background-color: black;
+  color: black;
+  border: 3px solid black;
+  margin: 0;
+  padding: 0;
+}
+.Profile img{
+  width: 280px;
+  border-radius: 50%;
+  padding: 0;
+}
+.Profile h1{
+  margin: 0;
+}
+.Profile-content{
+  display: flex;;
+  text-align: center;
+}
+.Profile-con1{
+  text-align: center;
+}
+.Profile-con1 table{
+  padding: 1em;
+  width: 100%;
+  margin: 1em;
+  overflow-x: auto;
+}
+table td{
+	border: black solid 1px;
+  padding: 35px;
+  text-align: justify;
+  font-size: 1em;
+  margin: 10px;
+
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}

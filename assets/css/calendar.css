@@ -1,0 +1,261 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #34b7a7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #49cbbb;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+/*--------------------------------------------------------------
+#SIDEBAR
+--------------------------------------------------------------*/
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  overflow: auto;
+
+
+}
+.sidebar header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #063146;
+  user-select: none;
+
+
+}
+.sidebar ul a {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid black;
+
+}
+ul li:hover a {
+  padding-left: 50px;
+}
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+form {
+  position: absolute;
+  right: 400px;
+  top: 50px;
+  width: 500px;
+  border: 2px solid #ccc;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+input {
+  display: block;
+  border: 2px solid #ccc;
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+label {
+  color: #888;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#logout  {
+  top: 3;
+  right: 0;
+  background: pink;
+  padding: 2px 5px;
+  color:white;
+  border-radius: 6px;
+  margin-right: 10px;
+  border: none;
+  font-size: 1.5em;
+}
+ button:hover{
+  opacity: .7;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+.nic{
+  margin-top: 115px;
+
+}
+
+/*--------------------------------------------------------------
+# overview
+--------------------------------------------------------------*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  margin-left: 20px;
+}
+.Profile{
+  margin: 0;
+  border: 1px solid pink;
+  padding: 0;
+}
+.data-container {
+  width: 100%;
+
+}
+.profile-picture {
+  width: 200px; /* Adjust the height as needed */
+  border-radius: 50%; /* To create a circular image, if desired */
+}
+.Profile-con1 {
+  width: 100%; /* Adjust the width as needed */
+}
+.content h1{
+  padding: 0.50em;
+}
+#td-title {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.con{
+  width: 80%;
+  margin-left: 18%;
+}
+.ttable{
+  margin-top: 45px;
+  padding:0;
+}
+.ttable table{
+  padding: 1em;
+  font-size: 2.35rem;
+  width: 100%;
+  background: #063146;
+  border-radius: 20px 20px 20px 20px;
+}
+.ttable td{
+  border: none;
+  font-size: 1.90rem;
+  text-align: center;
+  padding: 1em;
+  color: white;
+}
+.imahe{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.prof{
+  display: flex;
+  padding: .75em;
+  align-content: space-between;
+  background-color: #063146 ;
+  border-radius: 0px 0px 20px 20px;
+}
+.prof h3{
+  margin-top: 120px;
+  margin-left: 1.25em;
+  font-size: 4.50rem;
+  color: white;
+}
+/*BLOCK*/
+ .con {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+#calendar {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 70%;
+  height: 200px;
+  resize: vertical;
+  float: right;
+  margin-right: 200px; /* Adjust the margin value to create space for the sidebar */
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: #042331;
+  overflow: auto;
+  z-index: 999; /* Ensure the sidebar appears above the textarea */
+}

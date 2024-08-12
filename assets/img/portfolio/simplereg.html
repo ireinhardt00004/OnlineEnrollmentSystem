@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style type="text/css">
+
+
+* {
+	box-sizing: border-box; }
+html, body {	
+	background: springgreen;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+h2 {
+	text-align: center;
+	font-family: oldtown;
+}
+.box {
+	margin-top: 5%;
+	margin-bottom: auto;
+	margin: 0 auto;	
+	width:500px;
+	padding:10px;
+	background:#f9f9f9;
+	border:3px solid;#333;
+
+}
+p {
+	
+}
+form {
+	margin:80px;
+	font-family: arial;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background: transparent;
+}
+
+/* input fields */
+input[type=text], input[type=password], input[type=date] {
+  width:60%;
+  padding: 12px;
+  margin: 5px 0 22px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+
+}
+select{
+	width:100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: solid gray;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus, input [type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+  border: solid gray;
+}
+
+/* Set a style for the register button */
+.registerbtn {
+  background-color: royalblue;
+  margin-left: -50px;
+  color: white;
+  padding: 16px 20px;
+  margin: 1px 0;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  opacity: 0.9;
+
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="">
+		<h2><b>Simple Registration Form</b></h2>
+	<! ---form ----->
+		<div class="box">
+			<div class="col-lg-15-sm-20">
+<form action="action_page.php">
+		<p><b>PLEASE FILL IN THIS FORM TO CREATE AN ACCOUNT.</b></p>
+	<div class="row">
+	<div class="col-lg-15-sm-20">
+			<label for="surname">Surname</label>
+				<input type="text" placeholder="Enter Surname" name="surname" id=surname required>
+	</div>
+	<div class="col-lg-15-sm-20">
+			<label for="firstname">First Name</label>
+		<input type="text" placeholder="Enter Firstname" name="firstname" id=firstname required>
+	</div>
+	<div class="col-lg-15-sm-20">
+			<label for="midname">Middle Name</label>
+				<input type="text" placeholder="Enter Middle Name" name="midname" id=midname required>
+	</div>
+	<div class="col-lg-15-sm-20">>
+			<label for="bday">Birthdate</label>
+		<input type="date" placeholder="Birthdate" name="bday" required>
+	</div>
+	<div class="col-lg-15-sm-20">
+			<label for="gender">Gender</label>
+			<select id="genderselect"name="gender">
+				<option value="default" selected>Choose Gender</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="others">Prefer not to say</option>
+			</select>
+		</div>
+	
+	<div class="col-lg-15-sm-20">
+	<label for="surname">Email</label>
+	<input type="text" placeholder="Enter Email" name="email" id=email required>
+</div>
+<div class="col-lg-15-sm-20">
+	<label for="pw">Password</label>
+	<input type="password" placeholder="Enter Password" name="password" required></div>
+<div class="col-lg-15-sm-20">
+	<label for="pw">Confirm Password</label>
+	<input type="password" placeholder="Confirm Password" name="rpt-password" required>
+	</div>
+	<div class="col-lg-15-sm-20">
+	<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+	</form>
+		</div>
+			</div>
+		</div>
+	</form>
+	</body>
+</html>
